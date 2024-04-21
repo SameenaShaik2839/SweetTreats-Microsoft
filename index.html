@@ -3,70 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Treats Bakery</title>
     <style>
-        /* Set background pattern */
+        /* CSS styles */
         body {
-            background: url('pastel-stripes-pattern.jpg');
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
         }
-
-        /* Style navigation links */
-        nav ul {
-            list-style: none;
+        .header {
+            background: #f5e6cc;
+            padding: 20px;
+            text-align: center;
         }
-
-        nav ul li {
-            display: inline-block;
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #333;
+        }
+        .main {
+            padding: 20px;
+        }
+        .featured-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .featured-item img {
+            max-width: 200px;
             margin-right: 20px;
         }
-
-        /* Style order button */
-        .order-button {
-            float: right;
-            background-color: #ffcc00;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
+        .footer {
+            background: #f5e6cc;
+            padding: 20px;
+            text-align: center;
         }
-
-        /* Other styling for featured goods, contact info, map, and subscribe form */
-        /* ... */
     </style>
-    <title>Sweet Treats Bakery</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Our Story</a></li>
-                <li><a href="#">Visit Us</a></li>
-            </ul>
-            <a href="#" class="order-button">Order Online</a>
-        </nav>
-    </header>
-    <main>
-        <!-- Featured baked goods section -->
-        <section class="featured-goods">
-            <!-- Display high-quality images and descriptions -->
-            <!-- Seasonal promotions -->
-        </section>
-    </main>
-    <footer>
-        <div class="contact-info">
-            <!-- Contact information -->
+    <div class="header">
+        <h1>Sweet Treats Bakery</h1>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">Our Story</a>
+            <a href="#">Visit Us</a>
+            <a href="#">Order Online</a>
         </div>
-        <div class="map">
-            <!-- Map to the bakery's location -->
+    </div>
+    <div class="main">
+        <div class="featured-item">
+            <img src="cupcake.jpg" alt="Cupcake">
+            <p>Delicious cupcakes made with love.</p>
         </div>
-        <div class="subscribe-form">
-            <!-- Email subscription form -->
+        <div class="featured-item">
+            <img src="cookies.jpg" alt="Cookies">
+            <p>Homemade cookies for every occasion.</p>
         </div>
-    </footer>
-    <script>
-        // Implement any necessary JavaScript functionality
-        // For example, handling the shopping cart
-    </script>
+        <!-- Add more featured items here -->
+    </div>
+    <div class="footer">
+        <p>Contact us: info@sweettreatsbakery.com</p>
+        <p>123 Main St, City, State</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.6789!2d-123.456789!3d12.3456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDIzJzEwLjUiTiAxMjPCsDEyJzUwLjUiVw!5e0!3m2!1sen!2sus!4v1234567890!5m2!1sen!2sus" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <form>
+            <input type="email" placeholder="Subscribe for special offers">
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
 </body>
 </html>
